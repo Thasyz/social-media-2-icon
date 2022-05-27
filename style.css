@@ -7,17 +7,12 @@
 
     
 Body {
-  background: linear-gradient(80deg, rgba(238,174,202,1),rgb(238, 174, 229),rgba(148,187,233,1),rgb(152, 171, 248));
-      display: flex;
+  background: rgb(238,174,202);
+  background: linear-gradient(184deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+  display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-size: 400% 400%;
-    animation-name: background;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .social-container {
@@ -61,12 +56,12 @@ Body {
   border-radius:100%;
   display: block;
   background: linear-gradient(43deg, #415809 0%, #cB50c0 46%, #ffcc70 100%); ;
-  transition: all 0.265s ease-out
+  transition: all 0.265ms ease-out
 }
 
 .social-icons a:hover::before{
   transform: scale(0);
-  transition: all 0.265s ease-in;
+  transition: all 0.265ms ease-in;
 }
 .social-icons a:hover i {
   transform: scale(2);
@@ -77,18 +72,7 @@ Body {
  background-clip: text;
   -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-  transition: all 265s ease-in;
+  transition: all 265ms ease-in;
 
 }
 
-@keyframes background {
-  0%{
-      background-position-x: 0% ;
-  }
-   50%{
-    background-position-x: 50%;
-  }
-  100%{
-      background-position-x: 100%;
-  }
-}

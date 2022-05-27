@@ -1,0 +1,94 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+
+    
+Body {
+  background: linear-gradient(80deg, rgba(238,174,202,1),rgb(238, 174, 229),rgba(148,187,233,1),rgb(152, 171, 248));
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 400% 400%;
+    animation-name: background;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.social-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.social-icons{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.social-icons li{
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i{
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 0.265s ease-out;
+}
+.social-icons a{
+  display: inline-block;
+  }
+  .social-icons a::before{
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+  content:" ";
+  width: 60px;
+  height: 60px;
+  border-radius:100%;
+  display: block;
+  background: linear-gradient(43deg, #415809 0%, #cB50c0 46%, #ffcc70 100%); ;
+  transition: all 0.265ms ease-out
+}
+
+.social-icons a:hover::before{
+  transform: scale(0);
+  transition: all 0.265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: #fff; 
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+ background-clip: text;
+  -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+
+}
+
+@keyframes background {
+  0%{
+      background-position-x: 0% ;
+  }
+   50%{
+    background-position-x: 50%;
+  }
+  100%{
+      background-position-x: 100%;
+  }
+}

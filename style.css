@@ -61,12 +61,12 @@ Body {
   border-radius:100%;
   display: block;
   background: linear-gradient(43deg, #415809 0%, #cB50c0 46%, #ffcc70 100%); ;
-  transition: all 0.265ms ease-out
+  transition: all 0.265s ease-out
 }
 
 .social-icons a:hover::before{
   transform: scale(0);
-  transition: all 0.265ms ease-in;
+  transition: all 0.265s ease-in;
 }
 .social-icons a:hover i {
   transform: scale(2);
@@ -77,7 +77,7 @@ Body {
  background-clip: text;
   -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-  transition: all 265ms ease-in;
+  transition: all 265s ease-in;
 
 }
 
